@@ -509,7 +509,7 @@ https://discordapp.com/api/webhooks/{WebhookID}/{WebhookToken}
       <label for="apprise_notify_new_species_each_day">Notify each species first detection of the day</label><br>
       <input type="checkbox" name="apprise_notify_each_detection" <?php if($config['APPRISE_NOTIFY_EACH_DETECTION'] == 1 && filesize($home."/BirdNET-Pi/apprise.txt") != 0) { echo "checked"; };?> >
       <label for="apprise_weekly_report">Notify each new detection</label><br>
-      <input type="checkbox" name="apprise_weekly_report" <?php if($config['APPRISE_WEEKLY_REPORT'] == 1 && filesize($home."/BirdNET-Pi/apprise.txt") != 0) { echo "checked"; };?> >
+      <input type="checkbox" name="apprise_weekly_report" <?php if($config['APPRISE_WEEKLY_REPORT'] == 1 && filesize($home."/BirdNET-Pi/apprise_markdown.txt") != 0) { echo "checked"; };?> >
       <label for="apprise_weekly_report">Send <a href="views.php?view=Weekly%20Report"> weekly report</a></label><br>
 
       <hr>
